@@ -30,4 +30,10 @@ public class GuestService {
         guestRepository.deleteById(id);
     }
 
+    public Guest getGuestById(Long id){
+        return guestRepository
+        .findById(id)
+        .get();
+    }
+
 }
