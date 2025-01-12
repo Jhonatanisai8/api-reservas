@@ -15,7 +15,7 @@ public class Reservation {
     private Long idReservation;
     private String dateEntry;
     private String DateDeparture;
-    private Double value;
+    private Double valueMoney;
     private String FormPayment;
 
 }
