@@ -2,6 +2,7 @@ package com.api.api_reservas.controllers;
 
 import java.util.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -35,6 +36,11 @@ public class GuestController {
             @PathVariable Long id, @RequestBody Guest guest) {
         guest.setIdGuest(id);
         return guestService.updateGuest(guest);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteGuest(@PathVariable Long id) {
+        guestService.deleteGuest(id);
     }
 
 }
