@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:api_reservas_hotel
+    username: root
+    password: 1234
+jpa:
+  hibernate:
+    ddl-auto: create-drop
+  show-sql: true
+h2:
+  console:
+    enabled: true
