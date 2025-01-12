@@ -22,6 +22,12 @@ public class GuestService {
         return guestRepository.save(guest);
     }
 
-    
+    public Guest updateGuest(Guest guest) {
+        return guestRepository.save(guest);
+    }
+
+    public void deleteGuest(Long id) {
+        guestRepository.deleteById(id);
+    }
 
 }
